@@ -1,0 +1,59 @@
+.formBorder {
+    border-radius: 25px;
+    border: 2px solid rgb(21,34,62);
+}
+
+body {
+    background-color: rgb(14,24,45);
+    color: white;
+    font-family: "Hind", sans-serif;
+}
+
+.highlight {
+    color:rgb(132,230, 203);
+}
+
+.grayHighlight {
+    color:rgb(206, 214, 243);
+}
+
+.graylight {
+    color: rgb(138,146,173)
+}
+
+.d-flex {
+    gap: 20px;
+}
+
+.project {
+    background-color: rgb(21,34,62);
+}
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+ .link:hover {
+    color: rgb(132,230, 203);
+ }
+
+ .card-body {
+    background-color: rgb(21,34,62);
+
+ }
+
+ .card {
+    border: none;
+ }
+
+ .tech-stack {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap:wrap;
+ }
+
+ .btn-outline-success{
+    border-color: rgb(132,230, 203) !important;
+    color: rgb(132,230, 203);;
+ }
