@@ -9,13 +9,17 @@
 }
 
 .navbar-item:hover {
-    border-bottom: 5px solid rgb(132,230, 203);
+    border-bottom: 3px solid rgb(132,230, 203);
 }
 
 .navbar-link {
     margin-bottom: 0%;
 }
 
+
+.graylink {
+    color:rgb(206, 214, 243);
+}
 a {
     text-decoration: none;
 }
