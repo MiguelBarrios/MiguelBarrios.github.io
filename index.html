@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
-
+    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Miguel Barrios - Software Developer</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth">
@@ -265,7 +264,7 @@
         function sendEmail(){
             event.preventDefault();
             let xhr = new XMLHttpRequest();
-            let url = 'http://3.229.131.97:8080/DayTrainer/email';
+            let url = 'https://3.229.131.97:8080/DayTrainer/email';
             xhr.open('PUT', url, true);
 
             xhr.setRequestHeader("Content-type", "application/json"); // Specify JSON request body
