@@ -261,10 +261,9 @@
 
         function sendEmail(){
             event.preventDefault();
-            // console.log("TEst")
-            // console.log(document.emailForm.senderEmail.value)
             let xhr = new XMLHttpRequest();
-            xhr.open('PUT', 'http://127.0.0.1:8089/email', true);
+            let url = 'http://3.229.131.97:8080/DayTrainer/email';
+            xhr.open('PUT', url, true);
 
             xhr.setRequestHeader("Content-type", "application/json"); // Specify JSON request body
 
