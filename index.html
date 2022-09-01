@@ -15,25 +15,40 @@
     
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid mx-md-4 px-md-4 pt-md-2 mt-md-2 mx-xl-5 px-xl-5 pt-xl-5">
         <!-- Navbar -->
         <div class="row">
 
-            <div class="d-flex flex-row-reverse mt-2">
-                <div class="p-2 highlight">Contacts</div>
-                <div class="p-2 highlight">Projects</div>
-                <div class="p-2 highlight">About</div>
+            <div class="d-flex flex-row-reverse mt-2 px-md-4">
+                <div class="p-2 highlight"><a class="link highlight" href="#contactSection">Contact</a></div>
+                <div class="p-2 highlight"><a class="link highlight" href="#projectContainers">Projects</a></div>
+                <div class="p-2 highlight"><a class="link highlight" href="#aboutContainer">About</a></div>
               </div>
         </div>
 
         <!-- Header -->
         <div id="headingContainer" class="row mx-1 mb-5  mt-4" >
-            <h5 class="highlight">Hello, my name is</h5>
-            <div class="mb-2">
-                <h1 class="display-1">Miguel Barrios.</h1>
+            <div class="highlight mb-lg-3" id="helloBanner" >Hello, my name is</div>
+            <div class="mb-2" id="nameBanner">
+                <p class="letterEffect display-1">M</p>
+                <p class="letterEffect display-1">i</p>
+                <p class="letterEffect display-1">g</p>
+                <p class="letterEffect display-1">u</p>
+                <p class="letterEffect display-1">e</p>
+                <p class="letterEffect display-1">l</p>
+                <p class="letterEffect display-1">&nbsp;</p>
+                <p class="letterEffect display-1">B</p>
+                <p class="letterEffect display-1">a</p>
+                <p class="letterEffect display-1">r</p>
+                <p class="letterEffect display-1">r</p>
+                <p class="letterEffect display-1">i</p>
+                <p class="letterEffect display-1">o</p>
+                <p class="letterEffect display-1">s</p>
+                <p class="letterEffect display-1">.</p>
+
             </div>
             
-            <p class="graylight">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.</p>
+            <p class="graylight" id="aboutMe">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.</p>
         </div>
 
         <!-- About container -->
@@ -204,7 +219,7 @@
 
         <!-- Contact Form -->
             <div class="row d-flex flex-column">
-                <form name="emailForm">
+                <form name="emailForm" id="contactSection">
                     <div class="mx-auto form-group mb-2 col-sm-6">
                         <input type="text" name="senderName" class="form-control formBorder" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
                     </div>
@@ -220,7 +235,8 @@
         
                     <div>
                         <div class="d-flex justify-content-center">
-                            <button class="btn btn-outline-success" onclick="sendEmail()">send</button>
+                            <button class="btn btn-outline-success" onclick="sendEmail()">
+                                  send</button>
                         </div>
                     </div>
 
@@ -231,8 +247,6 @@
 
                     </div>
                 </form>
-
-
             </div>
         
 

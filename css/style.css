@@ -1,5 +1,18 @@
-#successBanner{
-    
+#nameBanner{
+    display: flex;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+#helloBanner{
+    font-size: x-large;
+}
+
+.letterEffect:hover {
+    color:rgb(132,230, 203);
 }
 
 .col-container {
@@ -45,10 +58,7 @@ body {
 .project {
     background-color: rgb(21,34,62);
 }
-.link {
-    color: white;
-    text-decoration: none;
-}
+
 
  .link:hover {
     color: rgb(132,230, 203);
@@ -73,4 +83,8 @@ body {
  .btn-outline-success{
     border-color: rgb(132,230, 203) !important;
     color: rgb(132,230, 203);;
+ }
+
+ #aboutMe{
+    font-size: larger;
  }
