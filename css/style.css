@@ -2,7 +2,23 @@
     display: flex;
 }
 
+.navbar-item {
+    border-bottom: 5px solid rgb(14,24,45);
+    padding-bottom: 0px;
+    margin-bottom: 0%;
+}
 
+.navbar-item:hover {
+    border-bottom: 5px solid rgb(132,230, 203);
+}
+
+.navbar-link {
+    margin-bottom: 0%;
+}
+
+a {
+    text-decoration: none;
+}
 
 #helloBanner{
     font-size: x-large;
