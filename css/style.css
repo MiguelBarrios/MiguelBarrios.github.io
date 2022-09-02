@@ -153,3 +153,11 @@ fading{
     /* 100%{opacity:0} */
 }
 
+.iconlink {
+    text-decoration: none;
+    color: white;
+}
+
+.iconlink:hover {
+    color: rgb(132,230, 203);
+}
