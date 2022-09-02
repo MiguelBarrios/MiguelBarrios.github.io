@@ -357,8 +357,8 @@
         function sendEmail(){
             event.preventDefault();
             let xhr = new XMLHttpRequest();
-            let url = 'https://cors-anywhere.herokuapp.com/http://3.229.131.97:8080/DayTrainer/email';
-            xhr.open('PUT', url, true);
+            let url = 'https://iifainwr5h.execute-api.us-east-1.amazonaws.com/default/sendEmail';
+            xhr.open('POST', url, true);
 
             xhr.setRequestHeader("Content-type", "application/json"); // Specify JSON request body
 
