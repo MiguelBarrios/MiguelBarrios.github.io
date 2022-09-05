@@ -330,9 +330,9 @@
                         </div>
                     </div>
 
-                    <div id="successBanner" class="hidden">
+                    <div id="successBanner">
                         <div class="d-flex justify-content-center mt-2">
-                            <p>*message sent*</p>
+                            <p id="messageSentBanner" class="hideMessageSentBanner">*message sent*</p>
                         </div>
 
                     </div>
@@ -402,12 +402,11 @@
                     if ( xhr.status == 200 || xhr.status == 201 ) { // Ok or Created
                         // let data = JSON.parse(xhr.responseText);
                         // console.log(data);
-                        console.log("success");
                         document.emailForm.reset();
-                        document.getElementById("successBanner").classList.remove("hidden");
+                        document.getElementById("messageSentBanner").classList.remove("hideMessageSentBanner");
                         setTimeout(function(){
-                            document.getElementById("successBanner").classList.add("hidden");
-                        }, 2000); //run this after 3 seconds
+                            document.getElementById("messageSentBanner").classList.add("hideMessageSentBanner");
+                        }, 3000); //run this after 3 seconds
                     }
                     else {
                         console.error("POST request failed.");

@@ -161,3 +161,7 @@ fading{
 .iconlink:hover {
     color: rgb(132,230, 203);
 }
+
+.hideMessageSentBanner {
+    color: rgb(14,24,45);
+}
