@@ -34,12 +34,7 @@ a {
     font-size: x-large;
 }
 
-.letterEffect:hover {
-    color:rgb(132,230, 203);
-}
-.letterEffectW:hover {
-    color:white;
-}
+
 
 .col-container {
     display: table; /* Make the container element behave like a table */
@@ -165,3 +160,70 @@ fading{
 .hideMessageSentBanner {
     color: rgb(14,24,45);
 }
+
+.hidden {
+    display: none;
+}
+
+.col {
+    flex: 1; /* additionally, equal width */
+    padding: 1em;
+    background-color: rgb(21,34,62);
+  }
+
+.project-skills {
+    background-color: rgb(21,34,62);
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap:wrap;
+}
+
+
+/* Banner */
+
+.headerLtrsm{
+    font-size: 80px;
+}
+
+.letterEffect:hover {
+    color:rgb(132,230, 203);
+}
+.letterEffectW:hover {
+    color:white;
+}
+
+.hiddenLetter{
+    color: rgb(14,24,45);
+}
+
+.bannerLettersm {
+}
+
+.bannerLetterlg{
+
+}
+
+@media only screen and (min-width:992px) { 
+    .bannerLettersm{
+        font-size: 50px;
+    }
+    .bannerLetterlg{
+        font-size: 70px;
+    }
+
+}
+
+@media only screen and (min-width:1400px) { 
+    .bannerLettersm{
+        font-size: 60px;
+    }
+    .bannerLetterlg{
+        font-size: 80px;
+    }
+
+}
+
+

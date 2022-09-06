@@ -24,12 +24,11 @@ function sendEmail(){
         if (xhr.readyState === 4 ) {
             if ( xhr.status == 200 || xhr.status == 201 ) { // Ok or Created
                 // let data = JSON.parse(xhr.responseText);
-                // console.log(data);
                 document.emailForm.reset();
                 document.getElementById("messageSentBanner").classList.remove("hideMessageSentBanner");
                 setTimeout(function(){
                     document.getElementById("messageSentBanner").classList.add("hideMessageSentBanner");
-                }, 3000); //run this after 3 seconds
+                }, 3000);
             }
             else {
                 console.error("POST request failed.");
@@ -49,4 +48,28 @@ function sendEmail(){
 
     // Pass JSON as request body
     xhr.send(userObjectJson);
+}
+
+var projectsHidden = true;
+
+function toggleProjects(){
+
+    let divs = document.querySelectorAll('.extraProject');
+    let projects = document.getElementsByClassName("extraProject");
+
+    if(projectsHidden){
+        projectsHidden = false;
+        for (var i = 0; i < divs.length; i++) {
+            divs[i].classList.remove('hidden');
+        }
+        document.querySelector('#showMoreProjectBtn').innerHTML = 'show less';
+        
+    }
+    else{
+        projectsHidden = true;
+        for (var i = 0; i < divs.length; i++) {
+            divs[i].classList.add('hidden');
+        }
+        document.querySelector('#showMoreProjectBtn').innerHTML = 'show more';
+    }    
 }
