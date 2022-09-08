@@ -114,7 +114,7 @@ body {
  /* w3 override */
 
  .w3-animate-right{
-    position:relative;animation:animateright 1.0s
+    position:relative;animation:animateright 1.3s
 }@keyframes animateright{
     from{
         right:-300px;
@@ -127,7 +127,7 @@ body {
 
 .w3-animate-left{
     position:relative;
-    animation:animateleft 1.0s
+    animation:animateleft 1.3s
 }@keyframes animateleft{
     from{
         left:-300px;
