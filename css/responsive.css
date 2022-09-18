@@ -5,16 +5,42 @@
     text-align: justify;
 }
 
+.tech-icon {
+    background-color: white;
+    padding: 5px;
+}
+
+.tech-icon img {
+    width: 50px;
+}
+
+.tech-icon-sm {
+    width: 100px;
+}
+
+
 /* 
 
 Breakpoint	Class infix	Dimensions
-X-Small	        None	<576px
 Small	        sm	    ≥576px
 Medium	        md	    ≥768px
 Large	        lg	    ≥992px
 X large 	    xl	    ≥1200px
 XX large	    xxl 	≥1400px
  */
+
+ /* @media only screen and (min-width:768px) { 
+    .tech-icon img {
+        width: 60px;
+    }
+}
+
+@media only screen and (min-width:992px) { 
+    .tech-icon img {
+        width: 80px;
+    }
+} */
+
 
  @media only screen and (min-width:1200px) { 
     .container-text-p {
@@ -27,9 +53,6 @@ XX large	    xxl 	≥1400px
     .navbar-item{
         font-size: 20px;
     }
-
-
-
 }
 
 @media only screen and (min-width:1400px) { 
@@ -39,9 +62,7 @@ XX large	    xxl 	≥1400px
     .container-text-h{
         font-size: 60px;
     }
-
     .navbar-item{
         font-size: 25px;
     }
-
 }
