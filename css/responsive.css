@@ -1,0 +1,47 @@
+.container-text-h {
+
+}
+.container-text-p {
+    text-align: justify;
+}
+
+/* 
+
+Breakpoint	Class infix	Dimensions
+X-Small	        None	<576px
+Small	        sm	    ≥576px
+Medium	        md	    ≥768px
+Large	        lg	    ≥992px
+X large 	    xl	    ≥1200px
+XX large	    xxl 	≥1400px
+ */
+
+ @media only screen and (min-width:1200px) { 
+    .container-text-p {
+        font-size: 18px;
+    }
+    .container-text-h{
+        font-size: 58px;
+    }
+
+    .navbar-item{
+        font-size: 20px;
+    }
+
+
+
+}
+
+@media only screen and (min-width:1400px) { 
+    .container-text-p {
+        font-size: 20px;
+    }
+    .container-text-h{
+        font-size: 60px;
+    }
+
+    .navbar-item{
+        font-size: 25px;
+    }
+
+}
