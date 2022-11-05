@@ -13,14 +13,31 @@
     display: flex;
 }
 
+
+
 .navbar-item {
     border-bottom: 5px solid rgb(14,24,45);
     padding-bottom: 0px;
     margin-bottom: 0%;
 }
 
-.navbar-item:hover {
-    border-bottom: 3px solid rgb(132,230, 203);
+.navbar-item:hover::after{
+    transform: scaleX(1);
+}
+
+.navbar-item::after {
+    /* border-bottom: 3px solid rgb(132,230, 203); */
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color:rgb(132,230, 203) ;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
 }
 
 .navbar-link {
