@@ -1,0 +1,6 @@
+#page-container {
+    width: min(100% - 20px, 1450px);
+    margin-inline: auto;
+    /* border: 2px;
+    border:solid; */
+}

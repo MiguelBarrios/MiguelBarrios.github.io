@@ -10,25 +10,23 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/styles2.css">
 	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="stylesheet" href="css/animations.css">
 	<link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> </head>
 
 <body>
-	<!-- <div class="animation1"></div> -->
-	<!-- <div class="buttonSlider"></div> -->
-
-	<div class="container-fluid pt-md-2 mt-md-2 px-xl-5 pt-xl-5">
-		<!-- Navbar -->
-		<div class="row mx-md-4">
-			<div class="w3-container w3-center w3-animate-top"></div>
+	<div id="page-container">
+		<!-- Navigation Bar -->
+		<div id="navigation-bar-container">
 			<div class="d-flex flex-row-reverse mt-2 px-md-4 w3-animate-right">
 				<div class="p-2 highlight"> <a class="link highlight navbar-item" href="#contactSection">Contact</a> </div>
 				<div class="p-2 highlight"> <a class="link highlight navbar-item" href="#projectContainers">Projects</a> </div>
 				<div class="p-2 highlight"> <a class="link highlight navbar-item" href="#aboutSection">About</a> </div>
 			</div>
 		</div>
-		<!-- Header -->
+
+		<!-- Greeting Section -->
 		<div id="headingContainer" class="row mx-1 mb-5  mt-4 mx-md-4 mx-lg-5 mx-xxl-6">
 			<div class="mb-2" id="nameBanner">
 				<p class="letterEffect display-5 mb-0 pb-0 w3-animate-left bannerLettersm">H</p>
@@ -79,13 +77,14 @@
 				<p class="letterEffect display-6 w3-animate-left bannerLettersm">r</p>
 			</div>
 			<a href="#contactSection" class="w3-animate-right">
-				<button class="btn btn-outline-success">Get in touch</button>
+				<button class="btn btn-lg btn-outline-success">Get in touch</button>
 			</a>
 		</div>
+
 		<!-- divider -->
-		<div class="w3-animate-left my-md-4 mx-md-4" id="aboutSection">
-			<hr class="mx-md-4"> </div>
-		<!-- ********************* -->
+	    <div class="w3-animate-left my-md-4 mx-md-4" id="aboutSection"><hr class="mx-md-4"></div>
+
+		<!-- About and Education -->
 		<div class="mx-1 test">
 			<div class="row mx-md-4">
 				<!-- About -->
@@ -164,13 +163,15 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- divider -->
-		<div class="w3-animate-left my-md-4 mx-md-4" id="aboutSection">
-			<hr class="mx-md-4"> </div>
-		<!-- About sections Header  -->
+		<div class="w3-animate-left my-md-4 mx-md-4" id="aboutSection"><hr class="mx-md-4"></div>
+
+		<!-- Skill and Abilities -->
 		<div id="aboutContainer" class="row mb-4">
 			<div class="d-flex justify-content-center  w3-animate-right">
-				<h2 class="highlight display-3">Skills and Abilities</h2> </div>
+				<h2 class="highlight display-3">Skills and Abilities</h2> 
+			</div>
 		</div>
 		<div class="mx-1 test">
 			<!-- <div class="row mx-md-4"> -->
@@ -402,9 +403,9 @@
 					</div>
 			</div>
 		</div>
+
 		<!-- divider -->
-		<div class="w3-animate-left my-md-4 mx-md-4" id="aboutSection">
-			<hr class="mx-md-4"> </div>
+		<div class="w3-animate-left my-md-4 mx-md-4" id="aboutSection"><hr class="mx-md-4"> </div>
 		<!-- Project Section  -->
 		<div id="aboutContainer" class="row mb-4">
 			<div class="d-flex justify-content-center  w3-animate-right">
@@ -613,9 +614,9 @@
 			</div>
 			<!-- End Project container -->
 		</div>
-		<!-- Line break -->
-		<div class="w3-animate-left">
-			<hr class="py-xxl-2"> </div>
+
+		<!-- divider -->
+		<div class="w3-animate-left my-md-4 mx-md-4" id="aboutSection"><hr class="mx-md-4"> </div>
 		<div id="contactSection" class="row d-flex mb-2 w3-animate-fading">
 			<h2 class="highlight display-3 text-center">Contact</h2> </div>
 		<!-- Contact Form -->
@@ -654,7 +655,7 @@
 			<!-- Github -->
 			<div>
 				<a href="https://github.com/MiguelBarrios" target="_blank" class="iconlink">
-					<svg class="icon delay1" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+					<svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
 						<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
 					</svg>
 				</a>
@@ -667,8 +668,11 @@
 				</a>
 			</div>
 		</div>
+
+
 	</div>
-	<!-- End page container -->
+
+
 	<script>
 	function isInViewport(element) {
 		const rect = element.getBoundingClientRect();
