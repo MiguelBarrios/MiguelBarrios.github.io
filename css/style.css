@@ -8,13 +8,6 @@
     background-color: rgb(14,24,45);
 }
 
-/* Heading Section */
-/* #headingContainer {
-    width: min(100% - 50px, 840px);
-    margin-inline: auto;
-    border: 2px;
-    border:solid;
-} */
 
 #nameBanner{
     display: flex;

@@ -77,7 +77,7 @@
 				<p class="letterEffect display-6 w3-animate-left bannerLettersm">r</p>
 			</div>
 			<a href="#contactSection" class="w3-animate-right">
-				<button class="btn btn-lg btn-outline-success">Get in touch</button>
+				<button id="getInTouchBtn" class="btn btn-lg btn-outline-success">Get in touch</button>
 			</a>
 		</div>
 
@@ -411,11 +411,11 @@
 		<div class="row d-flex flex-column w3-animate-bottom">
 			<form name="emailForm" id="contactSection">
 				<div class="mx-auto form-group mb-2 col-sm-6 col-xl-4">
-					<input type="text" name="senderName" class="form-control formBorder" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name"> </div>
+					<input type="text" name="senderName" class="form-control formBorder" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name"> </div>
 				<div class=" mx-auto form-group mb-2 col-sm-6 col-xl-4">
-					<input type="email" name="senderEmail" class="form-control formBorder" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> </div>
+					<input type="email" name="senderEmail" class="form-control formBorder" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email"> </div>
 				<div class=" mx-auto form-group col-sm-6 d-flex justify-content-center col-xl-4">
-					<textarea name="senderMessage" class="form-control formBorder mb-4" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your message"></textarea>
+					<textarea name="senderMessage" class="form-control formBorder mb-4" id="exampleFormControlTextarea1" rows="3" placeholder="message"></textarea>
 				</div>
 				<div>
 					<div class="d-flex justify-content-center">
@@ -443,7 +443,7 @@
 			<!-- Github -->
 			<div>
 				<a href="https://github.com/MiguelBarrios" target="_blank" class="iconlink">
-					<svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+					<svg class="icon delay1" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
 						<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
 					</svg>
 				</a>
@@ -460,6 +460,66 @@
 
 	</div>
 
+	<!-- populate skills and abilities  -->
+	<script>
+		let skillsAndAbilitiesList = [
+    { imgPath: "./images/java.png",name: "Java"}, 
+    { imgPath: "./images/springboot.png",name: "Spring Boot"}, 
+    { imgPath: "./images/angular.jpeg",name: "Angular"}, 
+    { imgPath: "./images/javascript.png",name: "Javascript"}, 
+    { imgPath: "./images/SQL.jpeg",name: "SQL"}, 
+    { imgPath: "./images/mongodb.png",name: "MongoDB"}, 
+    { imgPath: "./images/REST.png",name: "REST"}, 
+    { imgPath: "./images/springboot.png",name: "JPA"}, 
+    { imgPath: "./images/python.png",name: "Python"}, 
+    { imgPath: "./images/jdbc.png",name: "JDBC"}, 
+    { imgPath: "./images/typescript.png",name: "TypeScript"}, 
+    { imgPath: "./images/maven.jpeg",name: "Maven"},
+    { imgPath: "./images/gradle.png",name: "Gradle"},  
+    { imgPath: "./images/junit.png",name: "JUnit"}, 
+    { imgPath: "./images/git.svg",name: "GIT"}, 
+    { imgPath: "./images/docker.png",name: "Docker"}, 
+    { imgPath: "./images/html.png",name: "HTML"}, 
+    { imgPath: "./images/css.png",name: "CSS"}, 
+    { imgPath: "./images/microservices.png",name: "Microservices"}, 
+    { imgPath: "./images/python.png",name: "Python"}, 
+    { imgPath: "./images/redis.png",name: "Redis"}, 
+
+
+]
+function populateTechIconContainer(){
+    let techContainer = document.getElementById("tech-icon-container");
+    for(let i = 0; i < skillsAndAbilitiesList.length; ++i){
+       let container =  createTechCard(skillsAndAbilitiesList[i]);
+       techContainer.appendChild(container);
+    }
+
+}
+
+function createTechCard(data){
+    let wrapper = document.createElement('div');
+    wrapper.classList.add('card', 'pt-2', 'mx-auto')
+
+    let imgContainer = document.createElement('div');
+    let img = document.createElement('img');
+    img.setAttribute('src', data.imgPath);
+    img.setAttribute('width', '80px');
+    img.setAttribute('height', '80px');
+    img.classList.add('techIcon');
+
+    let nameContainer = document.createElement('div');
+    nameContainer.textContent = data.name;
+    nameContainer.setAttribute('style', 'color:black');
+    nameContainer.classList.add('d-flex', 'flex-row', 'justify-content-center');
+
+    wrapper.appendChild(img);
+    wrapper.appendChild(nameContainer);
+    return wrapper;
+}
+
+populateTechIconContainer();
+
+	</script>
 
 	<script>
 	function isInViewport(element) {
