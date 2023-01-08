@@ -1,8 +1,4 @@
 
-
-.card {
-    /* background-color:rgb(21,34,62); */
-}
 .about-section-card {
     border: solid;
     background-color: rgb(14,24,45);
@@ -213,6 +209,8 @@ fading{
     font-size: 80px;
 }
 
+
+
 .letterEffect:hover {
     color:rgb(132,230, 203);
 }
@@ -222,13 +220,6 @@ fading{
 
 .hiddenLetter{
     color: rgb(14,24,45);
-}
-
-.bannerLettersm {
-}
-
-.bannerLetterlg{
-
 }
 
 @media only screen and (min-width:992px) { 
@@ -257,4 +248,16 @@ fading{
     height: 80px;
 }
 
+.letterEffect, .letterEffectW {
+    transition: transform 0.1s;
+}
+
+.letterEffect:hover {
+    transform: scale(1.1);
+}
+
+.letterEffectW:hover {
+    transform: scale(1.1);
+
+}
 
