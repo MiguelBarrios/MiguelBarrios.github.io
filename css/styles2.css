@@ -4,3 +4,14 @@
     /* border: 2px;
     border:solid; */
 }
+
+
+/* Technical Skill section */
+.technical-section-header{
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+
+}
