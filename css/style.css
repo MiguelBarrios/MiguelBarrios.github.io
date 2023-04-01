@@ -1,4 +1,63 @@
+body {
+    background-color: rgb(14,24,45);
+    color: white;
+    font-family: "Hind", sans-serif;
+}
 
+.banner {
+    display: flex;
+    flex-direction: row;
+}
+
+.banner--teal {
+    color:rgb(132,230, 203);
+}
+
+.banner_letter {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    transition: transform 0.1s;
+}
+
+.banner_letter:hover {
+    transform: scale(1.1);
+}
+
+.banner_letter--sm {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.banner_letter--sm:hover {
+    color:rgb(132,230, 203);
+}
+
+.banner_letter--lg {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.banner_letter--lg:hover {
+    color: white;
+}
+
+/* Old styles */
+
+
+
+
+.btn {
+
+}
+
+.section {
+
+}
+
+
+/* OLD CSS */
 .about-section-card {
     border: solid;
     background-color: rgb(14,24,45);
@@ -75,11 +134,7 @@ a {
     border: 2px solid rgb(21,34,62);
 }
 
-body {
-    background-color: rgb(14,24,45);
-    color: white;
-    font-family: "Hind", sans-serif;
-}
+
 
 .highlight {
     color:rgb(132,230, 203);
@@ -205,23 +260,6 @@ fading{
 
 /* Banner */
 
-.headerLtrsm{
-    font-size: 80px;
-}
-
-
-
-.letterEffect:hover {
-    color:rgb(132,230, 203);
-}
-.letterEffectW:hover {
-    color:white;
-}
-
-.hiddenLetter{
-    color: rgb(14,24,45);
-}
-
 @media only screen and (min-width:992px) { 
     .bannerLettersm{
         font-size: 50px;
@@ -261,3 +299,25 @@ fading{
 
 }
 
+  
+#page-container {
+    width: min(100% - 20px, 1450px);
+    margin-inline: auto;
+    /* border: 2px;
+    border:solid; */
+}
+
+
+/* Technical Skill section */
+.technical-section-header{
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+
+}
+  
+  
+  
+  
